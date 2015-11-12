@@ -1,19 +1,20 @@
 # DESSolver Java-Applet
 A Java-based Ordinary Differential Equation (ODE) System Solver
 
-![Screenshot](/dessolver_small.jpg?raw=true "DESSolver Application")
+![/dessolver.jpg?raw=true](/dessolver_small.jpg?raw=true "DESSolver Application")
 
-## Starting Application
+## Installation / Usage
+To download the latest version have a look at the [releases](https://github.com/jens-maus/dessolver/releases) page of this GitHub project. You can download a proper .jar file from there.
+
 To start DESSolver as a standalone application you need to download the installation archive which you can find in the
-download section of this document. Installation as a standalone application should normally very easy as long as you already
-have a preinstalled java runtime environment (JRE) on the operating system you are actually using. If you need to install
-the java environment first, please refer to http://java.sun.com/j2se/ for any further information.
+[releases](https://github.com/jens-maus/dessolver/releases) section of this Github project. Installation as a standalone application should normally very easy as long as you already have a preinstalled java runtime environment (JRE) on the
+operating system you are actually using. If you need to install the java environment first, please refer to http://java.sun.com/j2se/ for any further information.
 
-After downloading the installation zip archive you can extract the archives content to a directory of your choice. We have
+After downloading the jar file you can execute the java application by either doubleclicking on the jar file or by using `java -jar XXXXX.jar` file on the command-line to start the application. In the repository we have also
 provided and included a startup-script for Linux (bash) and Windows (bat) which you should be able to execute. This script
 should automatically start the application with all necessary data.
 
-## Usage / Copyright
+## Copyright
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of

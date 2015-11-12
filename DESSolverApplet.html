@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<HTML>
+  <HEAD>
+    <META name="description" content="A differential equation system solver java applet">
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META name="author" content="Jens Langner">
+    <META name="keywords" content="ODE, differential, equation, runge kutta, dormand prince, euler, java, swing, Differenzialgleichungen, applet">
+    <TITLE>
+      Differential Equation System Solver Applet - a numerical solver for ODE-Systems
+    </TITLE>
+  </HEAD>
+  <BODY bgcolor="#C0C0C0" link="#0000FF">
+    <!-- The following code is used to identify the browser this pages is viewed. -->
+<SCRIPT type="text/javascript" language="JavaScript">
+<!--
+    var _info = navigator.userAgent; var _ns = false;
+    var _ie = (_info.indexOf("MSIE") > 0 && _info.indexOf("Win") > 0
+        && _info.indexOf("Windows 3.1") < 0);
+//-->
+</SCRIPT>
+    <COMMENT>
+<SCRIPT type="text/javascript" language="JavaScript1.1">
+<!--
+    var _ns = (navigator.appName.indexOf("Netscape") >= 0
+        && ((_info.indexOf("Win") > 0 && _info.indexOf("Win16") < 0
+        && java.lang.System.getProperty("os.version").indexOf("3.5") < 0)
+        || _info.indexOf("Sun") > 0));
+//-->
+</SCRIPT>
+    </COMMENT>
+    <CENTER>
+    <FONT face="Arial,Helvetica">
+     <TABLE border=0 cellspacing=0 cellpadding=15>
+          <TR>
+            <TD>
+              <A href="dessolver.jpg"><IMG src="dessolver_small.jpg" alt="DESSolver Application" width="324" height="266" border=0></A>
+            </TD>
+            <TD valign="top">
+              <H1>
+                DESSolver v1.7<BR>
+                Java-Applet
+              </H1>
+              <P>
+                (ODE) Ordinary <B>D</B>ifferential <B>E</B>quation <B>S</B>ystem <B>Solver</B>
+              </P>
+              <P>
+                Copyright &copy;`2002 by<BR>
+                <BR>
+                Authors:<BR>
+                <A href="mailto:Jens.Langner@light-speed.de">Jens Langner</A> - <A href="http://damato.light-speed.de/">http://damato.light-speed.de/</A><BR>
+                <A href="mailto:Juergen.Arndt@htw-dresden.de">Jürgen Arndt</A> - <A href="http://juergen.letzte-bankreihe.de/">http://juergen.letzte-bankreihe.de/</A><BR>
+                <A href="mailto:Felix.Kraemer@htw-dresden.de">Felix Krämer</A> - <A href="http://www.htw-dresden.de/~htw10894/">http://www.htw-dresden.de/~htw10894/</A><BR>
+              </P>
+              <P>
+                 <I><FONT size="-1">31st March 2002</FONT></I><BR>
+              </P>
+            </TD>
+          </TR>
+          <TR>
+            <TD colspan=2 align="left">
+              <FONT SIZE="-1">[ <A href="#applet">Start Java Applet</A> ] - [ <A href="#application">Start as Java Application</A> ] - [ <A href="#download">Download</A> ]</FONT>
+            </TD>
+          </TR>
+      </TABLE>
+      <HR width="100%">
+      <TABLE width="90%">
+        <TR>
+          <TD>
+            <H3>
+              <A name="application"></A>Starting as a Application
+            </H3>
+            To start DESSolver as a standalone application you need to <A href="#download">download</A> the installation archive which you can find
+            in the download section of this document. Installation as a standalone application should normally very easy as long
+            as you already have a preinstalled java runtime environment (JRE) on the operating system you are actually using. If you
+            need to install the java environment first, please refer to <A href="http://java.sun.com/j2se/">http://java.sun.com/j2se/</A> for
+            any further information.<BR>
+            <BR>
+            After downloading the installation zip archive you can extract the archives content to a directory of your choice. We have
+            provided and included a startup-script for Linux (bash) and Windows (bat) which you should be able to execute. This script
+            should automatically start the application with all necessary data.<BR>
+            <BR>
+            <HR>
+            <H3>
+              <A name="download"></A>Download
+            </H3>
+            <H4>
+              Disclaimer
+            </H4>
+            The Authors, assumes no responsibility for errors or omissions in these materials.
+            <P>
+              THESE MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+              PARTICULAR PURPOSE, OR NON-INFRINGEMENT. The Authors further does not warrant the accuracy or completeness of the information, text, graphics,links or other items
+              contained within these materials. The Authors shall not be liable for any special, indirect, incidental, or consequential damages, including without limitation, lost
+              revenues or lost profits, which may result from the use of these materials. The information on this server is subject to change without notice and does not represent a commitment on the
+              part of the Authors in the future.
+            </P>
+            <H4>
+              Usage / Copyright
+            </H3>
+            This program is free software; you can redistribute it and/or modify
+            it under the terms of the GNU General Public License as published by
+            the Free Software Foundation; either version 2 of the License, or (at
+            your option) any later version.<BR>
+            <BR>
+            This program is distributed in the hope that it will be useful, but
+            WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            General Public License for more details.<BR>
+            <BR>
+            You should have received a copy of the GNU General Public License
+            along with this program; if not, write to the Free Software
+            Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.<BR>
+            <BR>
+            <H4>
+              Binary files (JAR)
+            </H3>
+            Here you can download the necessary file (JAR) to run DESSolver as an Java Application with your operating system.
+            As this is a jar archive you should be able to execute this archive directly with "java -jar dessolver1_7.jar"
+            or by simply doubleclicking on it (only tested with Windows).
+            Please check first if your system has a running JVM before trying to run that application.<BR>
+            <BR>
+            <I>Precompiled Java binaries (JAR Archive):</I><BR>
+            <A href="dessolver_1_7.jar">dessolver_1_7.jar</A> - Version 1.7 - (142 KB)<BR>
+            <BR>
+            You can install the binary package into any directory of your choice.
+            <H4>
+              Sourcecode
+            </H4>
+            As we are publishing this application under the GNU General Public License (GPL) we are also shipping it with the
+            latest sourcecode. In the following archive you should find all necessary source files ordered in package directories.
+            It also includes the full JavaDoc documentation Doclet. Please use it wise.<BR>
+            <BR>
+            <I>Sourcecode distribution:</I><BR>
+            <A href="dessolver_1_7-src.zip">dessolver_1_7-src.zip</A> - Version 1.7 - (513 KB)<BR>
+            <BR>
+            <P>
+                Copyright &copy;`2002 by<BR>
+                <BR>
+                Authors:<BR>
+                <A href="mailto:Jens.Langner@light-speed.de">Jens Langner</A> - <A href="http://damato.light-speed.de/">http://damato.light-speed.de/</A><BR>
+                <A href="mailto:Juergen.Arndt@htw-dresden.de">Jürgen Arndt</A> - <A href="http://juergen.letzte-bankreihe.de/">http://juergen.letzte-bankreihe.de/</A><BR>
+                <A href="mailto:Felix.Kraemer@htw-dresden.de">Felix Krämer</A> - <A href="http://www.htw-dresden.de/~htw10894/">http://www.htw-dresden.de/~htw10894/</A><BR>
+              </P>
+            </P>
+            <HR>
+            <A name="applet"></A>
+            <H3>
+               <B>Java Applet</B>
+            </H3>
+            If you have a Java capable internet browser a small Java Swing based button should load on this page and you should be
+            able to click on this button to load and start the DESSolver application as a java applet.<BR>
+            If an error occurs please make sure that you have at least <A href="http://java.sun.com/products/plugin/">Java-Plug-In v1.3.1</A> installed.<BR>
+            <BR>
+            <FONT COLOR=#DF1045>
+            Please note that loading and starting of the applet may take some time accordingly to the network bandwith that is
+            currently available. So please be patient until it is fully initialized.<BR>
+            <BR>
+            <CENTER>
+            The loading &amp; starting process may take up to 2-5 minutes!!!!
+            </CENTER>
+            </FONT>
+            <BR>
+          </TD>
+        </TR>
+      </TABLE>
+      <BR>
+      <!-- The following code is repeated for each APPLET tag -->
+      <SCRIPT type="text/javascript" language="JavaScript">
+      <!--
+        if (_ie == true) document.writeln('<OBJECT classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" width="250" height="50" align="baseline" codebase="http://java.sun.com/products/plugin/1.3/jinstall-13-win32.cab#Version=1,3,0,0"><NOEMBED><XMP>');
+        else if (_ns == true) document.writeln('<EMBED type="application/x-java-applet;version=1.3" width="250" height="50" align="baseline" code="lrecog/LeavesApplicationApplet" pluginspage="http://java.sun.com/products/plugin/1.3/plugin-install.html"><NOEMBED><XMP>');
+      //-->
+      </SCRIPT>
+        <APPLET code="dessolver.DESSolverApplet" archive="dessolver_1_7.jar" align="baseline" width="200" height="200">
+      </XMP>
+          <PARAM name="java_code" value="dessolver.DESSolverApplet">
+          <PARAM name="java_archive" value="dessolver_1_7.jar">
+          <PARAM name="java_type" value="application/x-java-applet;version=1.3">
+          <PARAM name="scriptable" value="true">
+          <PARAM name="color" value="c0c0c0">
+          <FONT COLOR=#FF1010>This browser doesn`t support Java 2 SDK, Standard Edition v1.3 for APPLETS</FONT>
+          <BR><BR>
+        </APPLET></NOEMBED></EMBED>
+      </OBJECT>
+      <HR width="100%">
+      <TABLE width="98%">
+        <TR>
+          <TD>
+            <FONT SIZE="-1">Copyright &copy;`2002 by <A href="mailto:Jens.Langner@light-speed.de">Jens Langner</A></FONT>
+          </TD>
+          <TD align="right">
+            <FONT SIZE="1">31st March 2002</FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    </FONT>
+    </CENTER>
+  </BODY>
+</HTML>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class funcpainter.math.MathCalc</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">funcpainter.math</FONT>
+<BR>Class MathCalc</H2>
+<DL>
+<DT>public abstract class <B>MathCalc</B>
+</DL>
+<DL><DD><p>Title: Mathematical calculations</p> <p>Description: Abstract class for the different mathematical equations</p> <p>Copyright: Copyright (c) 2002</p> <p>Company: HTW-Dresden</p><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.0</DD>
+<DT><B>Author:</B><DD><A HREF="Jens.Langner@htw-dresden.de">Jens Langner</A></DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>MathCalc</H3>
+<PRE>
+public <B>MathCalc</B>(Vector&nbsp;strings)</PRE>
+<DL><DD>Constructor to initialize the Lexer and Parser with all functions in a vector.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>strings</CODE> - a Vector of functions</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>syntaxCheck</H3>
+<PRE>
+public int <B>syntaxCheck</B>()</PRE>
+<DL><DD>Method to return the result of the Parser<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>result of the parser</DD>
+</DL>
+<HR>
+
+<H3>toString</H3>
+<PRE>
+public String <B>toString</B>()</PRE>
+<DL><DD>Method that return the identifing string of the calculation method.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>a reference to a String</DD>
+</DL>
+<HR>
+
+<H3>calcValue</H3>
+<PRE>
+public abstract Vector <B>calcValue</B>(double&nbsp;x0,
+                                 double&nbsp;xf,
+                                 Vector&nbsp;startvector,
+                                 double&nbsp;offset)</PRE>
+<DL><DD>Abstract method to calculate all the values of the initialized functions in a vector and return it<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>x0</CODE> - the starting point at the function</DD>
+<DD><CODE>xf</CODE> - the end point of the function</DD>
+<DD><CODE>startvector</CODE> - a vector full of function we have to calculate the values for</DD>
+<DD><CODE>offset</CODE> - the starting offset we step forward in the calculation</DD>
+<DT><B>Returns:</B><DD>a Vector which includes vectors of the calculation results.</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>

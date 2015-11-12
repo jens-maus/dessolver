@@ -1,0 +1,17 @@
+package dessolver.interpreter;
+
+//-----------------------------------------------------------------------------
+// Written 2002 by Juergen Arndt.
+//
+//
+// File Arccos.java
+// Use  funktion fuer das ausfuehren des arcus cosinus im baum
+//-----------------------------------------------------------------------------
+
+class Arccos implements OpFuncPointer
+{
+   public double exec (double a, double b)
+   {
+      return Math.acos(a);
+   }
+}

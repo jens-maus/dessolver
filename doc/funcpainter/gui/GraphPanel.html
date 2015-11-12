@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class funcpainter.gui.GraphPanel</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">funcpainter.gui</FONT>
+<BR>Class GraphPanel</H2>
+<DL>
+<DT>public class <B>GraphPanel</B><DT>extends JPanel
+</DL>
+<DL><DD><p>Title: Graph Panel Component of the FuncPainter Applet</p> <p>Description: This panel represents the graph</p> <p>Copyright: Copyright (c) 2002</p> <p>Company: HTW-Dresden</p><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.1</DD>
+<DT><B>Author:</B><DD><A HREF="Jens.Langner@htw-dresden.de">Jens Langner</A></DD>
+<DD><A HREF="Felix.Kraemer@htw-dresden.de">Felix Kraemer</A></DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>drawAxes</H3>
+<PRE>
+private void <B>drawAxes</B>(Graphics&nbsp;g)</PRE>
+<DL><DD>Method that draws the X and Y Axis of the Graph if they are in the visible area depending on the graph values.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>g</CODE> - reference to the graphics area we can paint at.</DD>
+</DL>
+<HR>
+
+<H3>drawTics</H3>
+<PRE>
+private void <B>drawTics</B>(Graphics&nbsp;g)</PRE>
+<DL><DD>Method that draws the Tics within a passed area of Graphics<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>g</CODE> - reference to a Graphics Area where we can paint at</DD>
+</DL>
+<HR>
+
+<H3>drawGraph</H3>
+<PRE>
+private void <B>drawGraph</B>(Graphics&nbsp;g)</PRE>
+<DL><DD>Method that draws the graph out of the resultVector<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>g</CODE> - the graphics area we can draw the graph at</DD>
+</DL>
+<HR>
+
+<H3>setView</H3>
+<PRE>
+public void <B>setView</B>(int&nbsp;xMin,
+                    int&nbsp;xMax,
+                    int&nbsp;yMin,
+                    int&nbsp;yMax)</PRE>
+<DL><DD>Method that sets the environment of the Graph and repaints it accordingly<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>xMin</CODE> - X-minumum of the graph</DD>
+<DD><CODE>xMax</CODE> - X-maximum of the graph</DD>
+<DD><CODE>yMin</CODE> - Y-minimum of the graph</DD>
+<DD><CODE>yMax</CODE> - Y-maximum of the graph</DD>
+</DL>
+<HR>
+
+<H3>setFunction</H3>
+<PRE>
+public void <B>setFunction</B>(Vector&nbsp;functionVector,
+                        Vector&nbsp;startVector)</PRE>
+<DL><DD>Method to set a new function that should be printed at this graph Panel<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>function</CODE> - a String containing the full Differentional Equation like "4*exp(0.8*x)-0.5*y"</DD>
+</DL>
+<HR>
+
+<H3>setCalcMethod</H3>
+<PRE>
+public boolean <B>setCalcMethod</B>(String&nbsp;calcMethodString)</PRE>
+<DL><DD>Method to set the calcMethod Identifier to a specific value.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>calcMethodString</CODE> - </DD>
+<DT><B>Returns:</B><DD>true of we set it and false if it already was the same</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>
